@@ -13,3 +13,13 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jquery.min
+//= require bootstrap.min
+//= require jquery.bxslider.min
+//= require bootstrap-slider
+//= require waypoints.min
+//= require jquery.counterup.min
+//= require owl.carousel
+//= require modernizr.custom
+//= require jquery.dlmenu
+//= require functions
