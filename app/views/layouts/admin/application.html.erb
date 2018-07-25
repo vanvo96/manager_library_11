@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title><%= full_title yield(:title) %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "admin/application", media: "all", "data-turbolinks-track": "reload" %>
+  </head>
+  <body>
+    <div class="preloader-it">
+      <div class="la-anim-1"></div>
+    </div>
+    <div class="wrapper theme-4-active pimary-color-red">
+      <%= render "layouts/admin/nav_bar" %>
+      <%= render "layouts/admin/left_bar" %>
+      <div class="fixed-sidebar-right">
+      </div>
+      <div class="page-wrapper">
+        <%= yield %>
+        <%= render "layouts/admin/footer" %>
+        <%= javascript_include_tag "admin/application", "data-turbolinks-track": "reload" %>
+      </div>
+    </div>
+  </body>
+</html>
