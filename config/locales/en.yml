@@ -13,14 +13,27 @@ en:
       main: "Main"
     categories:
       index:
-        add: "Add"
-        edit: "Edit"
-        delete: "Delete"
+        title: "All categories"
         categories: "Categories"
-        action: "Action"
+        description: "Description"
+      new:
+        title: "Add category"
+        add_category: "Add a category"
+        category: "Category"
+      create:
+        category_created: "Category Created"
+      name: "Name"
+      description: "Description"
   users:
     new:
       title: "Sign Up"
       confirmation: "Confirmation"
       create_my_account: "Create my account"
-
+  shared:
+    form_constain: "The form contains"
+    error: "error"
+  add: "Add"
+  edit: "Edit"
+  delete: "Delete"
+  action: "Action"
+  back: "Back"

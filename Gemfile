@@ -11,6 +11,10 @@ gem "coffee-rails", "4.2.2"
 gem "turbolinks", "5.1.1"
 gem "jbuilder", "2.7.0"
 gem "bootsnap", "1.3.1", require: false
+gem "faker", "1.9.1"
+gem "will_paginate", "3.1.6"
+gem "bootstrap-will_paginate", "1.0.0"
+gem "config"
 
 group :development, :test do
   gem "mysql2", "0.5.2"
