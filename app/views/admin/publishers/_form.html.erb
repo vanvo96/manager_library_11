@@ -1,0 +1,23 @@
+<%= form_for [:admin, @publisher] do |f| %>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.publishers.name"), class: "control-label mb-10" %>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.publishers.location"), class: "control-label mb-10" %>
+        <%= f.text_field :location, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="form-actions">
+    <%= f.submit t("submit"), class: "btn btn-success btn-icon left-icon mr-10 pull-left" %>
+    <%= link_to t("back"), admin_publishers_path, class: "btn btn-warning pull-left" %>
+    <div class="clearfix"></div>
+  </div>
+<% end %>
