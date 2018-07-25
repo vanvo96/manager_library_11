@@ -1,10 +1,23 @@
 en:
   hello: "Hello world"
   application:
-    copy_right: "Copyrights © 2015-16 KodeForest. All rights reserved"
+    copy_right: "Copyrights © 2018 KodeForest. All rights reserved"
     book_library: "Book Library"
     welcome_library: "Welcome to Library"
     home: "Home"
+  admin:
+    application:
+      copy_right: "2018 © Library Management. Design by KodeForest"
+      management: "Management"
+      categories: "Categories"
+      main: "Main"
+    categories:
+      index:
+        add: "Add"
+        edit: "Edit"
+        delete: "Delete"
+        categories: "Categories"
+        action: "Action"
   users:
     new:
       title: "Sign Up"
