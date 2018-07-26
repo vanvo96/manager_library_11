@@ -10,6 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require rails-ujs
+//= require activestorage
 //= require jquery.min
 //= require bootstrap.min
 //= require admin/jquery.slimscroll
