@@ -1,0 +1,39 @@
+<%= form_for [:admin, @author] do |f| %>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.authors.name"), class: "control-label mb-10" %>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.authors.description"), class: "control-label mb-10" %>
+        <%= f.text_field :description, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.authors.detail"), class: "control-label mb-10" %>
+        <%= f.text_area :detail, class: "form-control", rows: 4 %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.authors.photo"), class: "control-label mb-10" %>
+        <%= f.file_field :picture %>
+      </div>
+    </div>
+  </div>
+  <div class="form-actions">
+    <%= f.submit t("submit"), class: "btn btn-success btn-icon left-icon mr-10 pull-left" %>
+    <%= link_to t("back"), admin_authors_path, class: "btn btn-warning pull-left" %>
+    <div class="clearfix"></div>
+  </div>
+<% end %>

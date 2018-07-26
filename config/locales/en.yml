@@ -53,8 +53,33 @@ en:
         delete_failed: "Delete failed"
         publisher_deleted: "Publisher deleted"
       not_found_publisher: "Not found publisher"
-      name: "name"
+      name: "Name"
       location: "Location"
+    authors:
+      index:
+        title: "All authors"
+        authors: "Authors"
+        description: "Description"
+        details: "Details"
+        photo: "Photo"
+      new:
+        title: "Add author"
+        add_author: "Add a author"
+      create:
+        author_created: "Author Created"
+      edit:
+        title: "Edit author"
+        edit_author: "Edit a author"
+      update:
+        author_updated: "Author Updated"
+      destroy:
+        delete_failed: "Delete failed"
+        author_deleted: "Author deleted"
+      not_found_author: "Not found author"
+      name: "Name"
+      description: "Description"
+      detail: "Detail"
+      photo: "Photo"
   users:
     new:
       title: "Sign Up"
