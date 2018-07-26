@@ -1,0 +1,8 @@
+<tr>
+  <td><%= link_to category.name, edit_admin_category_path(category) %></td>
+  <td><%= category.description %></td>
+  <td class="text-nowrap">
+    <%= edit_action edit_admin_category_path(category) %>
+    <%= delete_action admin_category_path(category) %>
+  </td>
+</tr>
