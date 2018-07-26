@@ -24,6 +24,15 @@ en:
         category_created: "Category Created"
       name: "Name"
       description: "Description"
+      update:
+        category_updated: "Category Updated"
+      edit:
+        title: "Edit category"
+        edit_category: "Edit a category"
+      destroy:
+        delete_failed: "Delete failed"
+        category_deleted: "Category deleted"
+      not_found_category: "Not found category"
   users:
     new:
       title: "Sign Up"
@@ -37,3 +46,5 @@ en:
   delete: "Delete"
   action: "Action"
   back: "Back"
+  you_sure: "You sure?"
+  submit: "Submit"
