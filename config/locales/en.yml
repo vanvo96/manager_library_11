@@ -10,6 +10,7 @@ en:
       copy_right: "2018 © Library Management. Design by KodeForest"
       management: "Management"
       categories: "Categories"
+      publishers: "Publishers"
       main: "Main"
     categories:
       index:
@@ -33,6 +34,27 @@ en:
         delete_failed: "Delete failed"
         category_deleted: "Category deleted"
       not_found_category: "Not found category"
+    publishers:
+      index:
+        title: "All publishers"
+        publishers: "Publishers"
+        locations: "Locations"
+      new:
+        title: "Add publisher"
+        add_publisher: "Add a publisher"
+      create:
+        publisher_created: "Publisher Created"
+      edit:
+        title: "Edit publisher"
+        edit_publisher: "Edit a publisher"
+      update:
+        publisher_updated: "Publisher Updated"
+      destroy:
+        delete_failed: "Delete failed"
+        publisher_deleted: "Publisher deleted"
+      not_found_publisher: "Not found publisher"
+      name: "name"
+      location: "Location"
   users:
     new:
       title: "Sign Up"
@@ -48,3 +70,4 @@ en:
   back: "Back"
   you_sure: "You sure?"
   submit: "Submit"
+
