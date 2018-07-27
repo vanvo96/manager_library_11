@@ -3306,7 +3306,7 @@ blockquote{
 */
 
 .lib-categories-section{
-	background-image:url(images/top-categories-bg.png);
+	background-image:url(/assets/top-categories-bg.png);
 	background-size:cover;
 	position:relative;
 }

@@ -5,6 +5,7 @@ en:
     book_library: "Book Library"
     welcome_library: "Welcome to Library"
     home: "Home"
+    categories: "Categories"
   admin:
     application:
       copy_right: "2018 © Library Management. Design by KodeForest"
@@ -147,11 +148,27 @@ en:
       role: "Role"
       not_delete: "Don't have role to delete"
       not_access: "Don't access"
+  home:
+    index:
+      title: "Home"
   users:
     new:
       title: "Sign Up"
       confirmation: "Confirmation"
       create_my_account: "Create my account"
+  categories:
+    not_found_category: "Not found category"
+    show:
+      view_detail: "View detail"
+  books:
+    show:
+      author: "Author"
+      category: "Category"
+      publisher: "Publisher"
+      detail: "Detail"
+      review: "Review"
+      related_books: "Related Books"
+    not_found_book: "Not found book"
   sessions:
     new:
       title: "Log In"
