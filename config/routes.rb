@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     resources :publishers
     resources :authors
     resources :books
+    resources :users
   end
 end

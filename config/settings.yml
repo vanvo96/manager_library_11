@@ -19,3 +19,7 @@ max_length_book_description: 255
 min_length_book_edition: 4
 max_length_book_edition: 255
 min_book_pages: 10
+users_per_page: 5
+max_length_user: 50
+max_length_user_email: 255
+min_length_user_password: 6
