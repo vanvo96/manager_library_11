@@ -80,6 +80,41 @@ en:
       description: "Description"
       detail: "Detail"
       photo: "Photo"
+    books:
+      index:
+        title: "All books"
+        books: "Books"
+        description: "Description"
+        detail: "Detail"
+        edition: "Edition"
+        pages: "Pages"
+        category: "Category"
+        publisher: "Publisher"
+        author: "Author"
+        picture: "Picture"
+      new:
+        title: "Add book"
+        add_book: "Add a book"
+      create:
+        book_created: "Book Created"
+      update:
+        book_updated: "Book Updated"
+      edit:
+        title: "Edit book"
+        edit_book: "Edit a book"
+      destroy:
+        delete_failed: "Delete failed"
+        book_deleted: "Book deleted"
+      not_found_book: "Not found book"
+      name: "Name"
+      description: "Description"
+      detail: "Detail"
+      edition: "Edition"
+      pages: "Pages"
+      category: "Category"
+      publisher: "Publisher"
+      author: "Author"
+      picture: "Picture"
   users:
     new:
       title: "Sign Up"

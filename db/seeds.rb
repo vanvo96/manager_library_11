@@ -16,3 +16,17 @@ end
   detail = Faker::Lorem.paragraph(3)
   Author.create!(name: name, description: description, detail: detail)
 end
+
+20.times do |n|
+  name = Faker::Book.title
+  description = Faker::Lorem.sentence(3)
+  detail = Faker::Lorem.paragraph(4)
+  edition = Faker::Lorem.sentence(2)
+  pages = rand(10..1000)
+  category_id = Category.order("RAND()").first.id
+  publisher_id = Publisher.order("RAND()").first.id
+  author_id = Author.order("RAND()").first.id
+  Book.create!(name: name, description: description, detail: detail,
+    edition: edition, pages: pages, category_id: category_id,
+    publisher_id: publisher_id, author_id: author_id)
+end

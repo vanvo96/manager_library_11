@@ -1,0 +1,83 @@
+<%= form_for [:admin, @book] do |f| %>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.books.name"), class: "control-label mb-10" %>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.books.description"), class: "control-label mb-10" %>
+        <%= f.text_field :description, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.books.edition"), class: "control-label mb-10" %>
+        <%= f.text_field :edition, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.books.pages"), class: "control-label mb-10" %>
+        <%= f.number_field :pages, class: "form-control", min: Settings.min_book_pages,
+          value: Settings.min_book_pages %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.books.detail"), class: "control-label mb-10" %>
+        <%= f.text_area :detail, class: "form-control", rows: 4 %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.books.category"), class: "control-label mb-10" %>
+        <%= f.select :category_id, @support.categories.map {|c| [c.name, c.id]}, {},
+          class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.books.publisher"), class: "control-label mb-10" %>
+        <%= f.select :publisher_id, @support.publishers.map {|p| [p.name, p.id]}, {},
+          class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.books.author"), class: "control-label mb-10" %>
+        <%= f.select :author_id, @support.authors.map {|a| [a.name, a.id]}, {},
+          class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label t("admin.books.picture"), class: "control-label mb-10" %>
+        <%= f.file_field :picture %>
+      </div>
+    </div>
+  </div>
+  <div class="form-actions">
+    <%= f.submit t("submit"), class: "btn btn-success btn-icon left-icon mr-10 pull-left" %>
+    <%= link_to t("back"), admin_books_path, class: "btn btn-warning pull-left" %>
+    <div class="clearfix"></div>
+  </div>
+<% end %>
