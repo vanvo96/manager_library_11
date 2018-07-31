@@ -115,6 +115,32 @@ en:
       publisher: "Publisher"
       author: "Author"
       picture: "Picture"
+    users:
+      index:
+        title: "All users"
+        users: "Users"
+        name: "Name"
+        email: "Email"
+        role: "Role"
+      new:
+        title: "Add user"
+        add_book: "Add a user"
+      create:
+        user_created: "User Created"
+      edit:
+        title: "Edit user"
+        edit_user: "Edit a user"
+      update:
+        user_updated: "User Updated"
+      destroy:
+        delete_failed: "Delete failed"
+        user_deleted: "User deleted"
+      not_found_user: "Not found user"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirm_password: "Confirm Password"
+      role: "Role"
   users:
     new:
       title: "Sign Up"
