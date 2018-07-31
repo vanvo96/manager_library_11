@@ -1,0 +1,9 @@
+<tr>
+  <td><%= link_to user.name, edit_admin_user_path(user) %></td>
+  <td><%= user.email %></td>
+  <td><%= user.role %></td>
+  <td class="text-nowrap">
+    <%= check_to_view_edit_tag user %>
+    <%= check_to_view_delete_tag user %>
+  </td>
+</tr>

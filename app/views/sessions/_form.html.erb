@@ -1,0 +1,19 @@
+<%= form_for :session, url: login_path do |f|%>
+  <div class="col-md-12 col-sm-12">
+    <div class="input-container">
+      <%= f.text_field :email %>
+      <%= f.label t("sessions.email") %>
+    </div>
+  </div>
+  <div class="col-md-12 col-sm-12">
+    <div class="input-container">
+      <%= f.password_field :password %>
+      <%= f.label t("sessions.password") %>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <p class="kd-button kf_submit widget-newslatter pull-right">
+      <%= f.submit t("sessions.login_account"), class: "thbg-color" %>
+    </p>
+  </div>
+<% end %>

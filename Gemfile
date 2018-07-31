@@ -17,6 +17,7 @@ gem "bootstrap-will_paginate", "1.0.0"
 gem "config"
 gem "carrierwave", "1.2.3"
 gem "mini_magick", "4.8.0"
+gem "bcrypt", "3.1.12"
 
 group :development, :test do
   gem "mysql2", "0.5.2"

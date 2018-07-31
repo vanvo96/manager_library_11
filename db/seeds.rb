@@ -30,3 +30,11 @@ end
     edition: edition, pages: pages, category_id: category_id,
     publisher_id: publisher_id, author_id: author_id)
 end
+
+20.times do |n|
+  name  = Faker::Name.name
+  email = "example-#{n+1}@railstutorial.org"
+  password = "password"
+  User.create!(name: name, email: email, role: rand(3), password: password,
+    password_confirmation: password)
+end

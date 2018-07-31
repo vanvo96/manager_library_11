@@ -12,6 +12,10 @@ en:
       categories: "Categories"
       publishers: "Publishers"
       main: "Main"
+      please_log_in: "Please log in."
+      not_access: "Don't access"
+      profile: "Profile"
+      log_out: "Log out"
     categories:
       index:
         title: "All categories"
@@ -115,11 +119,47 @@ en:
       publisher: "Publisher"
       author: "Author"
       picture: "Picture"
+    users:
+      index:
+        title: "All users"
+        users: "Users"
+        name: "Name"
+        email: "Email"
+        role: "Role"
+      new:
+        title: "Add user"
+        add_book: "Add a user"
+      create:
+        user_created: "User Created"
+      edit:
+        title: "Edit user"
+        edit_user: "Edit a user"
+      update:
+        user_updated: "User Updated"
+      destroy:
+        delete_failed: "Delete failed"
+        user_deleted: "User deleted"
+      not_found_user: "Not found user"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirm_password: "Confirm Password"
+      role: "Role"
+      not_delete: "Don't have role to delete"
+      not_access: "Don't access"
   users:
     new:
       title: "Sign Up"
       confirmation: "Confirmation"
       create_my_account: "Create my account"
+  sessions:
+    new:
+      title: "Log In"
+    create:
+      invalid_account: "Invalid email/password combination"
+    email: "Email"
+    password: "Password"
+    login_account: "Login Account"
   shared:
     form_constain: "The form contains"
     error: "error"
