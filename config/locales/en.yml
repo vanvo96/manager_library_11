@@ -12,6 +12,10 @@ en:
       categories: "Categories"
       publishers: "Publishers"
       main: "Main"
+      please_log_in: "Please log in."
+      not_access: "Don't access"
+      profile: "Profile"
+      log_out: "Log out"
     categories:
       index:
         title: "All categories"
@@ -141,11 +145,21 @@ en:
       password: "Password"
       confirm_password: "Confirm Password"
       role: "Role"
+      not_delete: "Don't have role to delete"
+      not_access: "Don't access"
   users:
     new:
       title: "Sign Up"
       confirmation: "Confirmation"
       create_my_account: "Create my account"
+  sessions:
+    new:
+      title: "Log In"
+    create:
+      invalid_account: "Invalid email/password combination"
+    email: "Email"
+    password: "Password"
+    login_account: "Login Account"
   shared:
     form_constain: "The form contains"
     error: "error"

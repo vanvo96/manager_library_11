@@ -31,15 +31,18 @@
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="form-group">
-        <%= f.label t("admin.users.role"), class: "control-label mb-10" %>
-        <%= f.select :role, User.roles.keys.map{|key| [key, key]}, {},
-          class: "form-control" %>
+  <% if (current_user.superadmin? && !current_user?(@user)) ||
+    (current_user.admin? && !current_user?(@user)) %>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <%= f.label t("admin.users.role"), class: "control-label mb-10" %>
+          <%= f.select :role, value_select_tag, {},
+            class: "form-control" %>
+        </div>
       </div>
     </div>
-  </div>
+  <% end %>
   <div class="form-actions">
     <%= f.submit t("submit"), class: "btn btn-success btn-icon left-icon mr-10 pull-left" %>
     <%= link_to t("back"), admin_users_path, class: "btn btn-warning pull-left" %>

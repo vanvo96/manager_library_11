@@ -11,6 +11,7 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
   validates :password, length: {minimum: Settings.min_length_user_password},
     allow_nil: true
+  validates :role, inclusion: {in: %w(user admin)}
 
   private
 
