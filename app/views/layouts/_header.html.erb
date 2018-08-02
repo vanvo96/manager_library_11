@@ -1,5 +1,8 @@
 <header class="header-3">
   <div class="container">
+    <% flash.each do |message_type, message| %>
+      <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
     <div class="logo-container">
       <div class="row">
         <div class="col-md-3">
@@ -15,7 +18,13 @@
           </div>
           <div class="kode-navigation">
             <ul>
-              <li><%= link_to t("application.home"), "#" %></li>
+              <li><%= link_to t("application.home"), root_path %></li>
+              <li>
+                <%= link_to t("application.categories"), category_path(@categories.first) %>
+                <ul>
+                  <%= render @categories %>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>

@@ -1,0 +1,51 @@
+<% provide :title, @book.name %>
+<div class="kode-content padding-tb-50">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="lib-book-detail">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="kode-thumb">
+                <%= image_tag @book.picture.url if @book.picture? %>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="kode-text">
+                <h2><%= @book.name %></h2>
+                <div class="product-price">
+                  <p><%= t ".author" %>: <span class="color"><%= @book.author.name %></span></p>
+                </div>
+                <div class="book-text">
+                  <p><%= @book.description %></p>
+                </div>
+                <div class="book-text">
+                  <p><%= t ".category" %>: <%= @book.category.name %></p>
+                  <p><%= t ".author" %>: <%= @book.author.name %></p>
+                  <p><%= t ".publisher" %>: <%= @book.publisher.name %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-review-tabs">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#Detail" role="tab" data-toggle="tab"><%= t ".detail" %></a></li>
+            <li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab"><%= t ".review" %></a></li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="Detail">
+              <p><%= @book.detail %></p>
+            </div>
+          </div>
+        </div>
+        <div class="lib-related-products">
+          <h2><%= t ".related_books" %></h2>
+          <div class="row">
+            <%= render @related_books %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
