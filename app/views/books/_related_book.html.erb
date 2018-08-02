@@ -1,0 +1,14 @@
+<div class="col-md-4">
+  <div class="best-seller-pro">
+    <figure>
+      <%= image_tag related_book.picture.url if related_book.picture? %>
+    </figure>
+    <div class="kode-text">
+      <h3><%= link_to related_book.name, book_path(related_book) %></h3>
+    </div>
+    <div class="kode-caption">
+      <h3><%= related_book.name %></h3>
+      <%= link_to t("categories.show.view_detail"), book_path(related_book), class: "add-to-cart" %>
+    </div>
+  </div>
+</div>

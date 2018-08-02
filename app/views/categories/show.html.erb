@@ -1,0 +1,11 @@
+<% provide :title, @category.name %>
+<div class="kode-content padding-tb-50">
+  <div class="container">
+    <div class="kode-product-filter">
+    </div>
+    <div class="row">
+      <%= render @books %>
+    </div>
+    <%= will_paginate @books %>
+  </div>
+</div>

@@ -1,8 +1,13 @@
 class Book < ApplicationRecord
+  has_many :borrows, dependent: :destroy
   belongs_to :category
   belongs_to :author
   belongs_to :publisher
   default_scope{order created_at: :desc}
+  scope :related_books, (lambda do |category_id, book_id|
+    where("category_id = ? && id != ?", category_id, book_id)
+      .limit(Settings.books.related_book_limit)
+  end)
   mount_uploader :picture, PictureUploader
   validates :name, presence: true,
     length: {minimum: Settings.min_length_book,
