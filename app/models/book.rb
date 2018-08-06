@@ -1,4 +1,5 @@
 class Book < ApplicationRecord
+  has_many :borrows, dependent: :destroy
   belongs_to :category
   belongs_to :author
   belongs_to :publisher

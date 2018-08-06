@@ -24,6 +24,10 @@
                   <p><%= t ".author" %>: <%= @book.author.name %></p>
                   <p><%= t ".publisher" %>: <%= @book.publisher.name %></p>
                 </div>
+                <div>
+                  <div id="message_borrow"></div>
+                  <%= render "borrows/form" %>
+                </div>
               </div>
             </div>
           </div>

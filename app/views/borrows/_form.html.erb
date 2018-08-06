@@ -1,0 +1,18 @@
+<%= form_for :borrow, url: borrows_path, remote: true do |f| %>
+  <div>
+    <%= f.hidden_field :book_id, value: @book.id %>
+  </div>
+  <div>
+    <%= f.label t("books.borrowed_date") %>
+    <%= f.date_field :borrowed_date %>
+  </div>
+  <div>
+    <%= f.label t("books.returned_date") %>
+    <%= f.date_field :returned_date %>
+  </div>
+  <div>
+    <p class="kd-button kf_submit widget-newslatter pull-right">
+      <%= f.submit t("books.borrow"), class: "thbg-color" %>
+    </p>
+  </div>
+<% end %>

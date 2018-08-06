@@ -6,6 +6,7 @@ en:
     welcome_library: "Welcome to Library"
     home: "Home"
     categories: "Categories"
+    please_log_in: "Please log in."
   admin:
     application:
       copy_right: "2018 © Library Management. Design by KodeForest"
@@ -168,6 +169,15 @@ en:
       detail: "Detail"
       review: "Review"
       related_books: "Related Books"
+    not_found_book: "Not found book"
+    borrowed_date: "Borrowed Date"
+    returned_date: "Returned Date"
+    borrow: "Borrow"
+  borrows:
+    create:
+      borrowed_created: "Request of you sent, pleach regularly check mail to receive messages"
+      create_failed: "Request failed"
+      request_failed: "Request failed"
     not_found_book: "Not found book"
   sessions:
     new:

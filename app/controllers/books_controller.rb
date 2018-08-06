@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+  before_action :check_login, only: :show
   before_action :load_book, only: :show
 
   def show
@@ -12,5 +13,12 @@ class BooksController < ApplicationController
     return if @book
     flash[:danger] = t "books.not_found_book"
     redirect_to root_path
+  end
+
+  def check_login
+    return if logged_in?
+    store_location
+    flash[:danger] = t "application.please_log_in"
+    redirect_to login_path
   end
 end

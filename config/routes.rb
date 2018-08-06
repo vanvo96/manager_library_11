@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :home, only: :index
   resources :categories, only: :show
   resources :books, only: :show
+  resources :borrows, only: :create
   namespace :admin do
     resources :categories
     resources :publishers
