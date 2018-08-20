@@ -1,4 +1,19 @@
 en:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "Name can not be blank"
+              too_long: "Name is too long (maximum is %{count} characters)"
+            email:
+              blank: "Email can not be blank"
+              too_long: "Name is too long (maximum is %{count} characters)"
+              taken: "Email already exist"
+              confirmation: doesn't match %{attribute}
+            password:
+              too_short: is too short (minimum is %{count} characters)
   hello: "Hello world"
   application:
     copy_right: "Copyrights © 2018 KodeForest. All rights reserved"
