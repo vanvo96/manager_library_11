@@ -20,6 +20,8 @@ gem "mini_magick", "4.8.0"
 gem "bcrypt", "3.1.12"
 
 group :development, :test do
+  gem "rspec-rails"
+  gem "factory_bot_rails"
   gem "mysql2", "0.5.2"
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -32,6 +34,7 @@ group :development do
 end
 
 group :test do
+  gem "shoulda-matchers"
   gem "capybara", "3.4.1"
   gem "selenium-webdriver"
   gem "chromedriver-helper"
