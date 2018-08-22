@@ -34,6 +34,7 @@ group :development do
 end
 
 group :test do
+  gem "rails-controller-testing"
   gem "shoulda-matchers"
   gem "capybara", "3.4.1"
   gem "selenium-webdriver"

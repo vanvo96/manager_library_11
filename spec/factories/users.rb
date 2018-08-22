@@ -6,4 +6,8 @@ FactoryBot.define do
     password_confirmation {"password"}
     role {"user"}
   end
+
+  factory :admin, parent: :user do
+    role {"admin"}
+  end
 end
